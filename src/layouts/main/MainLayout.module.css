@@ -1,5 +1,32 @@
 .mainContainer {
+  position: relative;
   width: 100%;
   min-height: 100dvh;
-  background-color: #f3f5f1;
+  background-color: var(--c-cream);
+  overflow-x: hidden;
+}
+
+.sideLeft,
+.sideRight {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 110px;
+  pointer-events: none;
+  z-index: 50;
+  opacity: 0.85;
+  mix-blend-mode: multiply;
+}
+
+.sideLeft { left: 0; }
+.sideRight { right: 0; }
+
+@media (max-width: 900px) {
+  .sideLeft,
+  .sideRight { width: 60px; opacity: 0.6; }
+}
+
+@media (max-width: 600px) {
+  .sideLeft,
+  .sideRight { display: none; }
 }

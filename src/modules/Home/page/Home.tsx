@@ -1,19 +1,30 @@
 import Hero from '../components/Hero/Hero'
-import Countdown from '../components/Countdown/Countdown'
+import IntroQuote from '../components/IntroQuote/IntroQuote'
 import Calendar from '../components/Calendar/Calendar'
-import Dresscode from '../components/Dresscode/Dresscode'
+import Countdown from '../components/Countdown/Countdown'
 import Timing from '../components/Timing/Timing'
-import FinalPhoto from '../components/FinalPhoto/FinalPhoto'
+import Location from '../components/Location/Location'
+import Dresscode from '../components/Dresscode/Dresscode'
+import Organizers from '../components/Organizers/Organizers'
+import TelegramBlock from '../components/TelegramBlock/TelegramBlock'
+import SiteFooter from '../components/SiteFooter/SiteFooter'
+import styles from './Home.module.css'
 
 export default function Home() {
   return (
     <>
       <Hero />
-      <Countdown />
-      <Calendar />
-      <Dresscode />
+      <IntroQuote />
+      <div className={styles.dateSection}>
+        <Calendar />
+        <Countdown />
+      </div>
       <Timing />
-      <FinalPhoto />
+      <Location />
+      <Dresscode />
+      <Organizers />
+      <TelegramBlock />
+      <SiteFooter />
     </>
   )
 }

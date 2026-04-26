@@ -1,0 +1,45 @@
+.footer {
+  text-align: center;
+  padding: 80px 24px 100px;
+  background: var(--c-cream);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+}
+
+.footer svg {
+  margin-bottom: 36px;
+}
+
+.names {
+  font-family: var(--font-display);
+  font-size: clamp(36px, 5vw, 56px);
+  color: var(--c-text);
+  letter-spacing: 0.04em;
+}
+
+.amp {
+  font-family: var(--font-serif);
+  font-style: italic;
+  color: var(--c-deep);
+  margin: 0 12px;
+}
+
+.date {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 18px;
+  color: var(--c-mute);
+  margin-top: 14px;
+  letter-spacing: 0.06em;
+}
+
+.mark {
+  font-family: var(--font-sans);
+  font-size: 10px;
+  letter-spacing: 0.5em;
+  text-transform: uppercase;
+  color: var(--c-deep);
+  margin-top: 30px;
+}

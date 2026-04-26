@@ -1,13 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&family=Italiana&family=Jost:wght@300;400;500&display=swap');
 @import 'tailwindcss';
 
+:root {
+  --c-white: #ffffff;
+  --c-cream: #f6f8f4;
+  --c-mist: #e8efe4;
+  --c-sage-soft: #d6e2d0;
+  --c-sage: #bfcfb8;
+  --c-moss: #a8bfa1;
+  --c-deep: #7a8f6f;
+  --c-text: #3a463a;
+  --c-mute: #6f7c6a;
+  --font-display: 'Italiana', serif;
+  --font-serif: 'Cormorant Garamond', serif;
+  --font-sans: 'Jost', system-ui, sans-serif;
+}
+
 @theme {
-  --font-display: 'Cormorant Garamond', serif;
-  --font-body: 'Raleway', sans-serif;
-  --color-brown-deep: #4e3b2a;
-  --color-brown-mid: #8a7a63;
-  --color-beige: #bfaf98;
-  --color-sage: #e2e8dd;
-  --color-cream: #f3f5f1;
+  --font-display: 'Italiana', serif;
+  --font-serif: 'Cormorant Garamond', serif;
+  --font-body: 'Jost', system-ui, sans-serif;
 }
 
 *,
@@ -23,8 +35,10 @@ html {
 }
 
 body {
-  font-family: var(--font-body, 'Raleway', sans-serif);
-  background-color: #f3f5f1;
-  color: #4e3b2a;
+  font-family: var(--font-sans);
+  background-color: var(--c-cream);
+  color: var(--c-text);
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 300;
 }

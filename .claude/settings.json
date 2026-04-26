@@ -4,7 +4,11 @@
       "Bash(npm run *)",
       "Bash(git init *)",
       "Bash(git remote *)",
-      "Bash(git add *)"
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)",
+      "Bash(git push *)",
+      "WebFetch(domain:api.anthropic.com)",
+      "PowerShell(Get-ChildItem -Recurse \"C:\\\\Users\\\\user\\\\.claude\\\\projects\\\\f--Wedding-wedding-layout-4\\\\6c6af3ff-fd08-4e07-9008-0889b03cb128\\\\tool-results\\\\extracted2\" | Where-Object { !$_.PSIsContainer } | Select-Object FullName, Length)"
     ]
   }
 }

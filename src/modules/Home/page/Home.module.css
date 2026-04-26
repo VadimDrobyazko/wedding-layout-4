@@ -1,0 +1,4 @@
+.dateSection {
+  background: linear-gradient(180deg, var(--c-cream) 0%, var(--c-mist) 100%);
+  padding-bottom: 80px;
+}
