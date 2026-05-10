@@ -7,10 +7,10 @@ export default function IntroQuote() {
 
   return (
     <section className={styles.section}>
-      <Divider color="#a8bfa1" />
+      <Divider color="#c4a39a" />
       <p className={styles.quote}>«{intro.quote}»</p>
       <div className={styles.attrib}>— {intro.attrib}</div>
-      <Divider color="#a8bfa1" />
+      <Divider color="#c4a39a" />
     </section>
   )
 }

@@ -1,13 +1,21 @@
 .section {
-  background: var(--c-white);
+  background: var(--c-cream);
   width: 100%;
   padding: 80px 24px;
   text-align: center;
 }
 
 .inner {
-  max-width: 960px;
+  max-width: 720px;
   margin: 0 auto;
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.inner.visible {
+  opacity: 1;
+  transform: none;
 }
 
 .eyebrow {
@@ -19,7 +27,7 @@
   letter-spacing: 0.5em;
   text-transform: uppercase;
   color: var(--c-deep);
-  margin-bottom: 24px;
+  margin-bottom: 28px;
 }
 
 .eyeLine {
@@ -35,7 +43,7 @@
   font-size: clamp(40px, 6vw, 76px);
   line-height: 1;
   color: var(--c-text);
-  margin: 0 0 18px;
+  margin: 0 0 24px;
   position: relative;
   isolation: isolate;
 }
@@ -60,27 +68,9 @@
 .sub {
   font-family: var(--font-serif);
   font-style: italic;
-  font-size: clamp(16px, 1.6vw, 20px);
+  font-size: clamp(17px, 1.8vw, 22px);
   color: var(--c-mute);
-  max-width: 540px;
-  margin: 0 auto 48px;
-  line-height: 1.55;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 8px;
-}
-
-.cell {
-  aspect-ratio: 1 / 1;
-  overflow: hidden;
-}
-
-.photo {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
+  line-height: 1.6;
+  margin: 0 auto;
+  max-width: 520px;
 }

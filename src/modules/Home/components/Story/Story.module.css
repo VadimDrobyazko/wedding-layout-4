@@ -1,0 +1,135 @@
+.section {
+  background: var(--c-white);
+  padding: 80px 24px;
+  text-align: center;
+}
+
+.inner {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  font-family: var(--font-sans);
+  font-size: 11px;
+  letter-spacing: 0.5em;
+  text-transform: uppercase;
+  color: var(--c-deep);
+  margin-bottom: 48px;
+}
+
+.eyeLine {
+  display: inline-block;
+  width: 36px;
+  height: 1px;
+  background: var(--c-moss);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+}
+
+.item {
+  padding: 0 32px;
+  border-right: 1px solid var(--c-mist);
+}
+
+.item:first-child {
+  padding-left: 0;
+}
+
+.item:last-child {
+  padding-right: 0;
+  border-right: none;
+}
+
+.year {
+  font-family: var(--font-display);
+  font-size: clamp(36px, 4vw, 56px);
+  color: var(--c-moss);
+  line-height: 1;
+  margin-bottom: 16px;
+  position: relative;
+  isolation: isolate;
+}
+
+.year::before {
+  content: attr(data-year);
+  position: absolute;
+  inset: 0;
+  text-align: center;
+  transform: translate(3px, -3px);
+  z-index: -1;
+  color: var(--c-moss);
+  opacity: 0.22;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+.line {
+  width: 24px;
+  height: 1px;
+  background: var(--c-moss);
+  margin: 0 auto 16px;
+}
+
+.text {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: clamp(14px, 1.3vw, 16px);
+  color: var(--c-mute);
+  line-height: 1.65;
+}
+
+@media (max-width: 720px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px 0;
+  }
+
+  .item {
+    padding: 0 20px;
+  }
+
+  .item:nth-child(2) {
+    border-right: none;
+  }
+
+  .item:nth-child(3) {
+    border-right: 1px solid var(--c-mist);
+    padding-left: 0;
+  }
+
+  .item:nth-child(4) {
+    border-right: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .item,
+  .item:nth-child(3) {
+    padding: 0;
+    border-right: none;
+    border-bottom: 1px solid var(--c-mist);
+    padding-bottom: 36px;
+  }
+
+  .item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+}

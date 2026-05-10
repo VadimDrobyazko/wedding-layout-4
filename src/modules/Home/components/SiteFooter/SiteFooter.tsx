@@ -7,7 +7,7 @@ export default function SiteFooter() {
 
   return (
     <footer className={styles.footer}>
-      <Divider color="#7a8f6f" />
+      <Divider color="#9b7e74" />
       <div className={styles.names}>
         {couple.bride} <span className={styles.amp}>&amp;</span> {couple.groom}
       </div>

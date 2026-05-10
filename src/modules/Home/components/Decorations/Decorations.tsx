@@ -1,10 +1,10 @@
 import type { FC } from 'react'
 
-const DEEP  = '#7a8f6f'
-const MID   = '#a8bfa1'
-const LIGHT = '#bfcfb8'
-const SOFT  = '#d6e2d0'
-const WHISP = '#e8efe4'
+const DEEP  = '#9b7e74'
+const MID   = '#c4a39a'
+const LIGHT = '#d4bab4'
+const SOFT  = '#e2d0ca'
+const WHISP = '#f0e8e5'
 
 // ─── Side botanical branches ───────────────────────────────────────────────
 

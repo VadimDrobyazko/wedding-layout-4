@@ -33,12 +33,6 @@ export default function Hero() {
       </div>
 
       <div className={styles.heroContent}>
-        <div className={styles.heroEyebrow}>
-          <span className={styles.heLine} />
-          <span>Весільний день</span>
-          <span className={styles.heLine} />
-        </div>
-
         <h1 className={styles.heroNames}>
           <span className={styles.heroName}>{couple.bride}</span>
           <span className={styles.heroAmp} aria-hidden="true">
@@ -52,7 +46,6 @@ export default function Hero() {
         </h1>
 
         <div className={styles.heroDate}>{event.dateDisplay}</div>
-        <div className={styles.heroPlace}>{event.place}</div>
       </div>
 
       <div className={styles.heroFrameBottom} aria-hidden="true">

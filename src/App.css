@@ -3,14 +3,14 @@
 
 :root {
   --c-white: #ffffff;
-  --c-cream: #f6f8f4;
-  --c-mist: #e8efe4;
-  --c-sage-soft: #d6e2d0;
-  --c-sage: #bfcfb8;
-  --c-moss: #a8bfa1;
-  --c-deep: #7a8f6f;
-  --c-text: #3a463a;
-  --c-mute: #6f7c6a;
+  --c-cream: #f8f5f3;
+  --c-mist: #f0e8e5;
+  --c-sage-soft: #e2d0ca;
+  --c-sage: #d4bab4;
+  --c-moss: #c4a39a;
+  --c-deep: #9b7e74;
+  --c-text: #3d2e2a;
+  --c-mute: #7a6560;
   --font-display: 'Italiana', serif;
   --font-serif: 'Cormorant Garamond', serif;
   --font-sans: 'Jost', system-ui, sans-serif;

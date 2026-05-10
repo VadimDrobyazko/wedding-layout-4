@@ -22,7 +22,7 @@ export default function Calendar() {
   ]
   while (cells.length % 7 !== 0) cells.push(null)
 
-  const ACCENT = '#7a8f6f'
+  const ACCENT = '#9b7e74'
 
   return (
     <section className={styles.section}>
@@ -31,7 +31,7 @@ export default function Calendar() {
         <span>Збережіть дату</span>
         <span className={styles.eyeLine} />
       </div>
-      <h2 className={styles.title}>Коли</h2>
+      <h2 className={styles.title} data-title="Коли">Коли</h2>
       <p className={styles.sub}>Запам'ятайте цей день — ми будемо щасливі бачити вас поруч</p>
 
       <div className={styles.calendarWrap}>
@@ -99,8 +99,8 @@ export default function Calendar() {
                       <svg viewBox="0 0 60 60" width="56" height="56" fill="none" aria-hidden="true">
                         <defs>
                           <linearGradient id="heartGrad" x1="0" y1="0" x2="0" y2="1">
-                            <stop offset="0" stopColor="#a8bfa1" />
-                            <stop offset="1" stopColor="#7a8f6f" />
+                            <stop offset="0" stopColor="#c4a39a" />
+                            <stop offset="1" stopColor="#9b7e74" />
                           </linearGradient>
                         </defs>
                         <path

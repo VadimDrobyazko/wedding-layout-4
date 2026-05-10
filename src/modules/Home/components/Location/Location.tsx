@@ -13,8 +13,7 @@ export default function Location() {
           <span>Де</span>
           <span className={styles.eyeLine} />
         </div>
-        <h2 className={styles.title}>Місце урочистості</h2>
-        <p className={styles.sub}>Садиба «{venue.name}»</p>
+        <h2 className={styles.title} data-title="Місце урочистості">Місце урочистості</h2>
       </div>
 
       <div className={styles.card}>

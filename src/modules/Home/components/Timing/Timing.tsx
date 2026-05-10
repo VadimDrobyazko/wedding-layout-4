@@ -13,7 +13,7 @@ export default function Timing() {
           <span>День весілля</span>
           <span className={styles.eyeLine} />
         </div>
-        <h2 className={styles.title}>Програма</h2>
+        <h2 className={styles.title} data-title="Програма">Програма</h2>
         <p className={styles.sub}>Маршрут нашого найважливішого дня</p>
 
         <div className={styles.list}>
@@ -31,10 +31,10 @@ export default function Timing() {
                   <div className={styles.time}>
                     <span>{it.time}</span>
                     <svg className={styles.timeOrn} width="60" height="14" viewBox="0 0 60 14" fill="none" aria-hidden="true">
-                      <line x1="0" y1="7" x2="22" y2="7" stroke="#a8bfa1" strokeWidth="0.7" />
-                      <path d="M30 7 C 26 4, 22 5, 22 9 C 26 11, 30 9, 30 7 Z" fill="#a8bfa1" />
-                      <path d="M30 7 C 34 4, 38 5, 38 9 C 34 11, 30 9, 30 7 Z" fill="#a8bfa1" />
-                      <line x1="38" y1="7" x2="60" y2="7" stroke="#a8bfa1" strokeWidth="0.7" />
+                      <line x1="0" y1="7" x2="22" y2="7" stroke="#c4a39a" strokeWidth="0.7" />
+                      <path d="M30 7 C 26 4, 22 5, 22 9 C 26 11, 30 9, 30 7 Z" fill="#c4a39a" />
+                      <path d="M30 7 C 34 4, 38 5, 38 9 C 34 11, 30 9, 30 7 Z" fill="#c4a39a" />
+                      <line x1="38" y1="7" x2="60" y2="7" stroke="#c4a39a" strokeWidth="0.7" />
                     </svg>
                   </div>
                   <h3 className={styles.eventName}>{it.event}</h3>

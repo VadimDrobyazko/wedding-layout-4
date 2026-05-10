@@ -8,6 +8,7 @@ export default function Router() {
       <Route element={<MainLayout />}>
         <Route index element={<Navigate to='/demo' replace />} />
         <Route path=':slug' element={<WeddingPage />} />
+        <Route path=':slug/:guestSlug' element={<WeddingPage />} />
       </Route>
       <Route path='*' element={<Navigate to='/demo' replace />} />
     </Routes>
