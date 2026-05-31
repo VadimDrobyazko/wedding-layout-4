@@ -1,9 +1,10 @@
 import { useWeddingConfig } from '@context/WeddingConfigContext'
-import { ICON_MAP } from '../Decorations/Decorations'
+import { useReveal } from '@hooks/useReveal'
 import styles from './Timing.module.css'
 
 export default function Timing() {
   const { timeline } = useWeddingConfig()
+  const reveal = useReveal(styles.visible)
 
   return (
     <section className={styles.section}>
@@ -18,12 +19,8 @@ export default function Timing() {
 
         <div className={styles.list}>
           {timeline.map((it, i) => {
-            const Icon = ICON_MAP[it.icon]
             return (
-              <div key={it.time} className={`${styles.row} ${i % 2 ? styles.rev : ''}`}>
-                <div className={styles.icon}>
-                  <Icon size={130} />
-                </div>
+              <div key={it.time} ref={reveal} className={`${styles.row} ${i % 2 ? styles.rev : ''}`} style={{ transitionDelay: `${i * 0.1}s` }}>
                 <div className={styles.rail} aria-hidden="true">
                   <div className={styles.dot} />
                 </div>

@@ -1,7 +1,7 @@
 .section {
   background: var(--c-mist);
   width: 100%;
-  padding: 80px 24px;
+  padding: 48px 24px;
   text-align: center;
 }
 
@@ -75,6 +75,14 @@
   padding: 90px 60px;
   border: 1px solid var(--c-sage-soft);
   text-align: center;
+  opacity: 0;
+  transform: translateY(32px);
+  transition: opacity 0.85s ease, transform 0.85s ease;
+}
+
+.card.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .corner { position: absolute; }

@@ -2,6 +2,8 @@ const config = {
   couple: {
     bride: 'Анна',
     groom: 'Влад',
+    brideEn: 'Anna',
+    groomEn: 'Vlad',
   },
   event: {
     date: '2026-09-20T15:00:00',
@@ -14,7 +16,6 @@ const config = {
   hero: {
     photo:
       'https://images.unsplash.com/photo-1519741497674-611481863552?w=1800&auto=format&fit=crop',
-    dim: 0.55,
   },
   intro: {
     quote: 'Усе в цьому світі пишеться удвох — наше світло, наш сад, наш вересень',

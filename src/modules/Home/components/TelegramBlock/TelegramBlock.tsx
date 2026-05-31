@@ -55,33 +55,7 @@ export default function TelegramBlock() {
           Долучайтеся — буде тепло і по-сімейному.
         </p>
 
-        <div className={styles.features}>
-          <div className={styles.feat}>
-            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" aria-hidden="true">
-              <rect x="3" y="5" width="16" height="12" rx="1" stroke="#7a8f6f" strokeWidth="1" />
-              <circle cx="8" cy="10" r="1.5" fill="#7a8f6f" />
-              <path d="M3 15 L 8 11 L 12 14 L 16 9 L 19 13" stroke="#7a8f6f" strokeWidth="1" fill="none" strokeLinejoin="round" />
-            </svg>
-            <span>Фото та відео</span>
-          </div>
-          <div className={styles.featSep} aria-hidden="true" />
-          <div className={styles.feat}>
-            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" aria-hidden="true">
-              <circle cx="11" cy="11" r="8" stroke="#7a8f6f" strokeWidth="1" />
-              <path d="M11 6 L 11 11 L 14 13" stroke="#7a8f6f" strokeWidth="1" fill="none" strokeLinecap="round" />
-            </svg>
-            <span>Розклад дня</span>
-          </div>
-          <div className={styles.featSep} aria-hidden="true" />
-          <div className={styles.feat}>
-            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" aria-hidden="true">
-              <path d="M11 18 C 11 18, 3 13, 3 8 C 3 5, 5 3, 7.5 3 C 9 3, 10.5 4, 11 5.5 C 11.5 4, 13 3, 14.5 3 C 17 3, 19 5, 19 8 C 19 13, 11 18, 11 18 Z" stroke="#7a8f6f" strokeWidth="1" fill="#a8bfa1" fillOpacity="0.4" strokeLinejoin="round" />
-            </svg>
-            <span>Атмосфера</span>
-          </div>
-        </div>
-
-        <a className={styles.cta} href={telegram.link} target="_blank" rel="noopener noreferrer">
+        < className={styles.cta} href={telegram.link} target="_blank" rel="noopener noreferrer">
           <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
             <circle cx="10" cy="10" r="9" fill="white" fillOpacity="0.18" />
             <path d="M5 10 L 14 6 L 12.5 15 L 9.5 12.5 L 12 8.5 L 8.5 11.5 L 5 10 Z" fill="currentColor" />

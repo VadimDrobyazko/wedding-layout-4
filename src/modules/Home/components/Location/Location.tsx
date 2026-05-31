@@ -1,46 +1,17 @@
 import { useWeddingConfig } from '@context/WeddingConfigContext'
-import { CornerFlourish } from '../Decorations/Decorations'
+import { useReveal } from '@hooks/useReveal'
 import styles from './Location.module.css'
 
 export default function Location() {
   const { venue } = useWeddingConfig()
+  const reveal = useReveal(styles.visible)
 
   return (
     <section className={styles.section}>
-      <div className={styles.inner}>
-        <div className={styles.eyebrow}>
-          <span className={styles.eyeLine} />
-          <span>Де</span>
-          <span className={styles.eyeLine} />
-        </div>
-        <h2 className={styles.title} data-title="Місце урочистості">Місце урочистості</h2>
-      </div>
-
-      <div className={styles.card}>
-        <CornerFlourish className={`${styles.corner} ${styles.cornerTl}`} size={110} />
-        <CornerFlourish className={`${styles.corner} ${styles.cornerTr}`} size={110} />
-        <CornerFlourish className={`${styles.corner} ${styles.cornerBl}`} size={110} />
-        <CornerFlourish className={`${styles.corner} ${styles.cornerBr}`} size={110} />
-
-        <div className={styles.venueName}>{venue.name}</div>
+      <div ref={reveal} className={styles.card}>
+<div className={styles.venueName}>{venue.name}</div>
         <div className={styles.venueAddr}>{venue.address}</div>
 
-        <div className={styles.meta}>
-          <div>
-            <div className={styles.metaLbl}>Початок</div>
-            <div className={styles.metaVal}>{venue.startTime}</div>
-          </div>
-          <div className={styles.metaSep} />
-          <div>
-            <div className={styles.metaLbl}>Дрес-код</div>
-            <div className={styles.metaVal}>{venue.dresscode}</div>
-          </div>
-          <div className={styles.metaSep} />
-          <div>
-            <div className={styles.metaLbl}>Парковка</div>
-            <div className={styles.metaVal}>На території</div>
-          </div>
-        </div>
 
         <a className={styles.cta} href={venue.mapUrl}>
           <span>Відкрити мапу</span>

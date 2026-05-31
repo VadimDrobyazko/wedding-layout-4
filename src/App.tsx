@@ -1,19 +1,22 @@
-import { BrowserRouter } from 'react-router-dom'
-import Router from '@router/Router'
+import { WeddingConfigProvider } from '@context/WeddingConfigContext'
+import { GuestProvider } from '@context/GuestContext'
+import config from '@config/wedding.config'
+import MainLayout from '@layouts/main/MainLayout'
+import Home from '@modules/Home/page/Home'
+import PageLoader from './components/PageLoader/PageLoader'
+import { usePageLoader } from '@hooks/usePageLoader'
 import './App.css'
 
-const App = () => {
-  //   useEffect(() => {
-  //     if (window.Telegram?.WebApp) {
-  //       window.Telegram.WebApp.expand()
-  //     }
-  //   }, [])
-
+export default function App() {
+  const { progress, done } = usePageLoader()
   return (
-    <BrowserRouter>
-      <Router />
-    </BrowserRouter>
+    <WeddingConfigProvider value={config}>
+      <GuestProvider value={null}>
+        <PageLoader progress={progress} done={done} />
+        <MainLayout>
+          <Home />
+        </MainLayout>
+      </GuestProvider>
+    </WeddingConfigProvider>
   )
 }
-
-export default App

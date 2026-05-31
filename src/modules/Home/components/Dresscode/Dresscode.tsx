@@ -1,4 +1,5 @@
 import { useWeddingConfig } from '@context/WeddingConfigContext'
+import { useReveal } from '@hooks/useReveal'
 import styles from './Dresscode.module.css'
 
 const LOOKS = [
@@ -12,6 +13,7 @@ const LOOKS = [
 
 export default function Dresscode() {
   const { dresscode } = useWeddingConfig()
+  const reveal = useReveal(styles.visible)
 
   return (
     <section className={styles.section}>
@@ -25,8 +27,13 @@ export default function Dresscode() {
         <p className={styles.sub}>{dresscode.hint}</p>
 
         <div className={styles.grid}>
-          {LOOKS.map((src) => (
-            <div key={src} className={styles.cell}>
+          {LOOKS.map((src, i) => (
+            <div
+              key={src}
+              ref={reveal}
+              className={styles.cell}
+              style={{ transitionDelay: `${i * 0.08}s` }}
+            >
               <img src={src} alt="" className={styles.photo} aria-hidden="true" />
             </div>
           ))}

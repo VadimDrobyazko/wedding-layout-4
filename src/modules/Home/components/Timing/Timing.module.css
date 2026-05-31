@@ -1,7 +1,7 @@
 .section {
   background: var(--c-white);
   width: 100%;
-  padding: 80px 24px;
+  padding: 48px 24px;
 }
 
 .sectionInner {
@@ -72,7 +72,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  gap: 80px;
+  gap: 40px;
   margin-top: 40px;
   padding: 0 20px;
 }
@@ -95,8 +95,15 @@
   justify-content: flex-start;
   position: relative;
   min-height: 160px;
-  /* even rows: content on left half */
   padding-right: calc(50% + 40px);
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.row.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .row.rev {

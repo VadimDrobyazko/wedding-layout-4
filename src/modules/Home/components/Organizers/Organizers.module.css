@@ -7,6 +7,14 @@
 .inner {
   max-width: 640px;
   margin: 0 auto;
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.inner.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .eyebrow {
