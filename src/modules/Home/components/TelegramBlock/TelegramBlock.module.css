@@ -78,7 +78,7 @@
 .cardDesc {
   font-family: var(--font-serif);
   font-style: italic;
-  font-size: clamp(16px, 1.6vw, 19px);
+  font-size: clamp(20px, 2vw, 24px);
   line-height: 1.6;
   color: var(--c-mute);
   max-width: 540px;
