@@ -6,9 +6,9 @@ const config = {
     groomEn: 'Vlad',
   },
   event: {
-    date: '2026-09-20T15:00:00',
-    dateDisplay: '20 вересня 2026',
-    day: 20,
+    date: '2026-09-29T15:00:00',
+    dateDisplay: '29 вересня 2026',
+    day: 29,
     month: 8,
     year: 2026,
     place: 'садиба «Зелений сад» · Київська область',
